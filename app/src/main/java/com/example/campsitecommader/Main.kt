@@ -95,7 +95,7 @@ class Main : ComponentActivity() {
                                 Text("ADD", fontSize = 18.sp)
                             }
 
-                            
+
                         }
                     }
                 }
