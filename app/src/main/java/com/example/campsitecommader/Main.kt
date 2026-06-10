@@ -59,7 +59,7 @@ class Main : ComponentActivity() {
                         verticalArrangement = Arrangement.Center,
                         horizontalAlignment = Alignment.CenterHorizontally
                     ) {
-                        // Display current item count at the top
+                        // Display  for current item count at the top
                         Text(
                             text = "Currently you have $itemCount items",
                             fontSize = 20.sp,
@@ -69,7 +69,7 @@ class Main : ComponentActivity() {
 
                         Spacer(modifier = Modifier.height(24.dp))
 
-                        // Increased text size for the main instruction
+                        
                         Text(
                             text = "Manage your gear and inventory",
                             fontSize = 32.sp,
