@@ -95,15 +95,7 @@ class Main : ComponentActivity() {
                                 Text("ADD", fontSize = 18.sp)
                             }
 
-                            ElevatedButton(
-                                onClick = {
-                                    // Navigate back to the start screen
-                                    val intent = Intent(this@Main, MainActivity::class.java)
-                                    startActivity(intent)
-                                }
-                            ) {
-                                Text("BACK", fontSize = 18.sp)
-                            }
+                            
                         }
                     }
                 }
