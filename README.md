@@ -25,7 +25,8 @@ HOW TO NAVIGATE THE APPLICATION
 
    
 
-6. The application has no taken you to the last screen where it shows you how many items you packed
+6. The application has no taken you to the last screen where it shows you how many items you packed,
+7. it will also ask you if you want to exit the app or go and pack more items.
    <img width="405" height="624" alt="last screen" src="https://github.com/user-attachments/assets/54bd3ae4-71fb-4894-9b60-8ed85abfe07d" />
 
 
