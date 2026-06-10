@@ -61,11 +61,11 @@ fun CampingInventoryScreen(modifier: Modifier = Modifier) {
     val context = LocalContext.current
     val activity = context as? Activity
 
-    // 1. Logic for managing number of items
+    
     var itemCountInput by remember { mutableStateOf("") }
     var totalItems by remember { mutableIntStateOf(0) }
 
-    // 2. Parallel "Arrays" (using State Lists for Compose reactivity)
+    
     val itemNames = remember { mutableStateListOf<String>() }
     val categories = remember { mutableStateListOf<String>() }
     val quantities = remember { mutableStateListOf<String>() }
@@ -73,7 +73,7 @@ fun CampingInventoryScreen(modifier: Modifier = Modifier) {
 
     var showSummary by remember { mutableStateOf(false) }
 
-    // Simple TextField colors to remove any gray background
+    
     val simpleTextFieldColors = OutlinedTextFieldDefaults.colors(
         focusedContainerColor = Color.Transparent,
         unfocusedContainerColor = Color.Transparent,
@@ -94,7 +94,7 @@ fun CampingInventoryScreen(modifier: Modifier = Modifier) {
         )
 
         if (totalItems == 0) {
-            // STEP 1: Ask user for the number of items
+            
             OutlinedTextField(
                 value = itemCountInput,
                 onValueChange = { itemCountInput = it },
@@ -108,7 +108,7 @@ fun CampingInventoryScreen(modifier: Modifier = Modifier) {
                 val count = itemCountInput.toIntOrNull() ?: 0
                 if (count > 0) {
                     totalItems = count
-                    // Initialize parallel arrays with empty values
+                    
                     for (i in 0 until count) {
                         itemNames.add("")
                         categories.add("")
@@ -176,13 +176,13 @@ fun CampingInventoryScreen(modifier: Modifier = Modifier) {
                 Text("View Summary & Calculate Totals", color = Color.White)
             }
         } else {
-            // STEP 4: Calculate total quantity using a loop
+            
             var totalQuantity = 0
             for (i in 0 until quantities.size) {
                 totalQuantity += (quantities[i].toIntOrNull() ?: 0)
             }
 
-            // STEP 5: Display the summary
+            
             LazyColumn(
                 modifier = Modifier.weight(1f),
                 verticalArrangement = Arrangement.spacedBy(8.dp)
@@ -223,7 +223,7 @@ fun CampingInventoryScreen(modifier: Modifier = Modifier) {
 
                     Spacer(modifier = Modifier.height(8.dp))
 
-                    // Row format for Back and Exit buttons
+                    
                     Row(
                         modifier = Modifier.fillMaxWidth(),
                         horizontalArrangement = Arrangement.spacedBy(16.dp)
