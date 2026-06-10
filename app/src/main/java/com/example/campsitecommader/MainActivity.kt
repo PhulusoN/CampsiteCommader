@@ -24,11 +24,10 @@ class MainActivity : ComponentActivity() {
         setContent {
             CampsiteCommaderTheme {
                 LaunchedEffect(Unit) {
-                   // delay(3000) // 3-second splash screen delay
+                   // delay
                     val intent = Intent(this@MainActivity, Main::class.java)
                     startActivity(intent)
-                    finish() // Close MainActivity so it's not in the back stack
-                }
+                    finish() 
 
                 Column(
                     modifier = Modifier.fillMaxSize(),
