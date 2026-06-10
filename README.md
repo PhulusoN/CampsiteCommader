@@ -14,7 +14,8 @@ HOW TO NAVIGATE THE APPLICATION
 
 
 2. Then it takes you to the next screnn which is where youl will pess the add button then the application will take you to another screen.
-![Uploading screen2.png…]()
+<img width="373" height="635" alt="screen2" src="https://github.com/user-attachments/assets/0475bd22-9201-4fc5-a178-c61d56a18362" />
+
 
 
 3. Now here you will have to put i how many items you would like to pack after entering a number you press "enter  button"
